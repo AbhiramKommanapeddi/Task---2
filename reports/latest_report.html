@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaturalTest Report - PASSED</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            margin: 0;
+            padding: 24px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .header {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            margin-bottom: 24px;
+            border-left: 8px solid #10b981;
+        }
+        .status-pill {
+            display: inline-block;
+            background: #ecfdf5;
+            color: #10b981;
+            font-weight: 700;
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 0 12px 0;
+        }
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+            font-size: 14px;
+        }
+        .meta-item strong {
+            display: block;
+            color: #64748b;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        .step-card {
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+        .step-header {
+            background: #f1f5f9;
+            padding: 12px 18px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+        }
+        .step-badge {
+            background: #0f172a;
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        .step-action {
+            font-weight: 700;
+            color: #2563eb;
+        }
+        .step-duration {
+            margin-left: auto;
+            color: #64748b;
+            font-size: 12px;
+        }
+        .step-body {
+            padding: 16px 18px;
+        }
+        .step-reason {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+        .step-detail {
+            font-size: 13px;
+            color: #475569;
+            margin-top: 4px;
+        }
+        .step-detail code {
+            background: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        .step-error {
+            background: #fef2f2;
+            color: #b91c1c;
+            padding: 8px 12px;
+            border-radius: 6px;
+            margin-top: 8px;
+            font-size: 13px;
+        }
+        .screenshot-container {
+            margin-top: 14px;
+        }
+        .screenshot-thumb {
+            max-width: 100%;
+            max-height: 280px;
+            border-radius: 6px;
+            border: 1px solid #cbd5e1;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        .screenshot-thumb:hover {
+            transform: scale(1.01);
+        }
+        .screenshot-label {
+            display: block;
+            font-size: 11px;
+            color: #94a3b8;
+            margin-top: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+            margin-top: 12px;
+        }
+        th {
+            background: #f8fafc;
+            padding: 12px;
+            text-align: left;
+            font-size: 13px;
+            color: #475569;
+            border-bottom: 2px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="status-pill">PASSED</span>
+            <h1 class="title">Test Execution Report</h1>
+            <div style="font-size: 16px; color: #334155; margin-bottom: 8px;">
+                <strong>Test Case:</strong> "Log in as a customer and verify the dashboard is shown"
+            </div>
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <strong>Target Site</strong>
+                    <a href="https://phptravels.net" target="_blank" style="color: #2563eb;">https://phptravels.net</a>
+                </div>
+                <div class="meta-item">
+                    <strong>AI Provider</strong>
+                    <span>Heuristic NLP Planner (Offline/Autonomous)</span>
+                </div>
+                <div class="meta-item">
+                    <strong>Duration</strong>
+                    <span>35.80 seconds</span>
+                </div>
+                <div class="meta-item">
+                    <strong>Steps Executed</strong>
+                    <span>6 steps</span>
+                </div>
+            </div>
+        </div>
+
+        <h2>Assertions & Verification</h2><table><thead><tr><th>Assertion</th><th>Expected</th><th>Actual Outcome</th><th>Status</th></tr></thead><tbody>
+        <tr style="border-bottom: 1px solid #e2e8f0;">
+            <td style="padding: 10px;"><strong>the dashboard is shown</strong></td>
+            <td style="padding: 10px; color: #64748b;">Dashboard page / heading is displayed</td>
+            <td style="padding: 10px; color: #64748b;">URL: https://phptravels.net/dashboard, Title: Dashboard</td>
+            <td style="padding: 10px; color: #10b981; font-weight: bold; text-align: center;">✔ PASS</td>
+        </tr>
+        </tbody></table><br>
+
+        <h2>Step-by-Step Timeline</h2>
+        
+        <div class="step-card">
+            <div class="step-header">
+                <span class="step-badge">Step 1</span>
+                <span class="step-action">NAVIGATE</span>
+                <span class="step-status" style="color: #10b981; font-weight: bold;">SUCCESS</span>
+                <span class="step-duration">17989ms</span>
+            </div>
+            <div class="step-body">
+                <div class="step-reason"><strong>Goal:</strong> Navigated to initial URL: https://phptravels.net</div>
+                
+                <div class="step-detail"><strong>Value:</strong> <code>https://phptravels.net</code></div>
+                
+                
+            <div class="screenshot-container">
+                <a href="screenshots\01_initial_nav_01_1793977849.png" target="_blank">
+                    <img src="screenshots\01_initial_nav_01_1793977849.png" alt="Step 1" class="screenshot-thumb" />
+                </a>
+                <span class="screenshot-label">Click image to enlarge</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="step-card">
+            <div class="step-header">
+                <span class="step-badge">Step 2</span>
+                <span class="step-action">CLICK</span>
+                <span class="step-status" style="color: #10b981; font-weight: bold;">SUCCESS</span>
+                <span class="step-duration">5485ms</span>
+            </div>
+            <div class="step-body">
+                <div class="step-reason"><strong>Goal:</strong> Navigating to login page via navigation link.</div>
+                <div class="step-detail"><strong>Target:</strong> <code>a:has-text("Login")</code></div>
+                
+                
+                
+            <div class="screenshot-container">
+                <a href="screenshots\02_click_02_1793977856.png" target="_blank">
+                    <img src="screenshots\02_click_02_1793977856.png" alt="Step 2" class="screenshot-thumb" />
+                </a>
+                <span class="screenshot-label">Click image to enlarge</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="step-card">
+            <div class="step-header">
+                <span class="step-badge">Step 3</span>
+                <span class="step-action">FILL</span>
+                <span class="step-status" style="color: #10b981; font-weight: bold;">SUCCESS</span>
+                <span class="step-duration">854ms</span>
+            </div>
+            <div class="step-body">
+                <div class="step-reason"><strong>Goal:</strong> Filling login identifier with 'user@phptravels.com'</div>
+                <div class="step-detail"><strong>Target:</strong> <code>#email</code></div>
+                <div class="step-detail"><strong>Value:</strong> <code>user@phptravels.com</code></div>
+                
+                
+            <div class="screenshot-container">
+                <a href="screenshots\03_fill_03_1793977856.png" target="_blank">
+                    <img src="screenshots\03_fill_03_1793977856.png" alt="Step 3" class="screenshot-thumb" />
+                </a>
+                <span class="screenshot-label">Click image to enlarge</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="step-card">
+            <div class="step-header">
+                <span class="step-badge">Step 4</span>
+                <span class="step-action">FILL</span>
+                <span class="step-status" style="color: #10b981; font-weight: bold;">SUCCESS</span>
+                <span class="step-duration">854ms</span>
+            </div>
+            <div class="step-body">
+                <div class="step-reason"><strong>Goal:</strong> Filling password field securely.</div>
+                <div class="step-detail"><strong>Target:</strong> <code>#password</code></div>
+                <div class="step-detail"><strong>Value:</strong> <code>demouser</code></div>
+                
+                
+            <div class="screenshot-container">
+                <a href="screenshots\04_fill_04_1793977857.png" target="_blank">
+                    <img src="screenshots\04_fill_04_1793977857.png" alt="Step 4" class="screenshot-thumb" />
+                </a>
+                <span class="screenshot-label">Click image to enlarge</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="step-card">
+            <div class="step-header">
+                <span class="step-badge">Step 5</span>
+                <span class="step-action">PRESS</span>
+                <span class="step-status" style="color: #10b981; font-weight: bold;">SUCCESS</span>
+                <span class="step-duration">5077ms</span>
+            </div>
+            <div class="step-body">
+                <div class="step-reason"><strong>Goal:</strong> Sending Enter key to confirm submission.</div>
+                
+                <div class="step-detail"><strong>Value:</strong> <code>Enter</code></div>
+                
+                
+            <div class="screenshot-container">
+                <a href="screenshots\05_press_05_1793977863.png" target="_blank">
+                    <img src="screenshots\05_press_05_1793977863.png" alt="Step 5" class="screenshot-thumb" />
+                </a>
+                <span class="screenshot-label">Click image to enlarge</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="step-card">
+            <div class="step-header">
+                <span class="step-badge">Step 6</span>
+                <span class="step-action">FINISH</span>
+                <span class="step-status" style="color: #10b981; font-weight: bold;">SUCCESS</span>
+                <span class="step-duration">443ms</span>
+            </div>
+            <div class="step-body">
+                <div class="step-reason"><strong>Goal:</strong> Authenticated successfully: redirected past login page to verified target area.</div>
+                
+                <div class="step-detail"><strong>Value:</strong> <code>PASSED</code></div>
+                
+                
+            <div class="screenshot-container">
+                <a href="screenshots\06_finish_06_1793977863.png" target="_blank">
+                    <img src="screenshots\06_finish_06_1793977863.png" alt="Step 6" class="screenshot-thumb" />
+                </a>
+                <span class="screenshot-label">Click image to enlarge</span>
+            </div>
+            
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
